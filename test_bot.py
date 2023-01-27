@@ -104,7 +104,7 @@ def start(message: types.Message):
             inline_keyboard.add(inline_button)            
             j += 1
             call_back_nums += 1
-            print(j)
+            
     bot.send_message(message.chat.id, 'Новости за сегодня!', reply_markup=inline_keyboard)
 
     
@@ -144,7 +144,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[2]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[2]['title']}</b>\n\n{data[2]['description']}\n{data[2]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -158,7 +158,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[3]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[3]['title']}</b>\n\n{data[3]['description']}\n{data[3]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -172,7 +172,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[4]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[4]['title']}</b>\n\n{data[4]['description']}\n{data[4]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -186,7 +186,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[5]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[5]['title']}</b>\n\n{data[5]['description']}\n{data[5]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -200,7 +200,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[6]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[6]['title']}</b>\n\n{data[6]['description']}\n{data[6]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -214,7 +214,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[7]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[7]['title']}</b>\n\n{data[7]['description']}\n{data[7]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -228,7 +228,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[8]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[8]['title']}</b>\n\n{data[8]['description']}\n{data[8]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -242,7 +242,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[9]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[9]['title']}</b>\n\n{data[9]['description']}\n{data[9]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -256,7 +256,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[10]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[10]['title']}</b>\n\n{data[10]['description']}\n{data[10]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -270,7 +270,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[11]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[11]['title']}</b>\n\n{data[11]['description']}\n{data[11]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -284,7 +284,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[12]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[12]['title']}</b>\n\n{data[12]['description']}\n{data[12]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -298,7 +298,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[13]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[13]['title']}</b>\n\n{data[13]['description']}\n{data[13]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -312,7 +312,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[14]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[14]['title']}</b>\n\n{data[14]['description']}\n{data[14]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -326,7 +326,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[15]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[15]['title']}</b>\n\n{data[15]['description']}\n{data[15]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -340,7 +340,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[16]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[16]['title']}</b>\n\n{data[16]['description']}\n{data[16]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -354,7 +354,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[17]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[17]['title']}</b>\n\n{data[17]['description']}\n{data[17]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -368,7 +368,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[18]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[18]['title']}</b>\n\n{data[18]['description']}\n{data[18]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
@@ -382,7 +382,7 @@ def start(message: types.Message):
     def answer(callback: types.CallbackQuery):
         inline_keyboard = types.InlineKeyboardMarkup()
         inline_button = types.InlineKeyboardButton("Остановить!", callback_data='stop')
-        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[1]['news_link'])
+        inline_button2 = types.InlineKeyboardButton("Подробнее", url=data[19]['news_link'])
         inline_keyboard.add(inline_button2, inline_button)
         bot.send_message(callback.message.chat.id, f"<b>{data[19]['title']}</b>\n\n{data[19]['description']}\n{data[19]['image']}", parse_mode='html', reply_markup=inline_keyboard)
         
